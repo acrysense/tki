@@ -1,0 +1,107 @@
+.contact{
+    margin-bottom: 110px;
+    padding-top: 365px;
+    @include media-breakpoint-only(md) {
+        margin-bottom: 70px;
+        padding-top: 215px;
+    }
+    @include media-breakpoint-only(sm) {
+        margin-bottom: 50px;
+        padding-top: 40px;
+    }
+    @include media-breakpoint-only(xs) {
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    &__map-block{
+        height: 430px;
+        position: absolute;
+        z-index: 8;
+        top: 0;
+        left: 0;
+        width: 100%;
+        //background-image: url("../img/map.jpg");
+        background-size: cover;
+        background-position: center center;
+        @include media-breakpoint-only(md) {
+            height: 300px;
+        }
+        @include media-breakpoint-only(sm) {
+            position: relative;
+            z-index: 20;
+            height: 350px;
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-only(xs) {
+            position: relative;
+            z-index: 20;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+    }
+    &__map-img{
+        width: 100%;
+    }
+
+    &__content-wrap{
+        position: relative;
+    }
+    &__content{
+        position: relative;
+        @include media-breakpoint-only(md) {
+
+        }
+        @include media-breakpoint-only(sm) {
+
+        }
+        @include media-breakpoint-only(xs) {
+
+        }
+    }
+    &__left{
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 20;
+    }
+    &__phone{
+        font-size: 26px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    &__time{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        color: #485364;
+    }
+    &__text{
+        font-size: 15px;
+        font-weight: 500;
+        &:not(:last-child){
+            margin-bottom: 12px;
+        }
+    }
+    &__right{
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 20;
+        @include media-breakpoint-up(lg) {
+            margin-top: 60px;
+        }
+    }
+    &__address{
+        font-size: 34px;
+        font-weight: 300;
+        color: #fff;
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.contact-page{
+    .circle_purple{
+        display: none;
+    }
+}

@@ -1,0 +1,182 @@
+.circle__brands,
+.circle__brands2,
+.circle__conf,
+.circle__footer,
+.circle__contact,
+.circle__daas1,
+.circle__daas2,
+.circle__tradein1,
+.circle__tradein2,
+.circle__price{
+    width: 1700px;
+    max-width: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle__brands{
+    right: -30%;
+    top: -58%;
+    @include media-breakpoint-only(sm) {
+        right: -80%;
+    }
+    @include media-breakpoint-only(xs) {
+        width: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40%;
+    }
+}
+.circle__brands2{
+    right: 0;
+    left: 0;
+    margin-left:  auto;
+    margin-right:  auto;
+    top: -50%;
+    @include media-breakpoint-only(sm) {
+        left: -60%;
+        top: 22%;
+    }
+    @include media-breakpoint-only(xs) {
+        width: 1200px;
+        left: 50%;
+        transform: translateX(-55%);
+        top: 70%;
+    }
+
+}
+.circle__conf{
+    right: 0;
+    left: -5%;
+    margin-left:  auto;
+    margin-right:  auto;
+    top: -415px;
+    @include media-breakpoint-only(lg) {
+        left: -20%;
+    }
+    @include media-breakpoint-only(md) {
+        left: -15%;
+    }
+    @include media-breakpoint-only(sm) {
+        top: 0;
+        left: -60%;
+    }
+    @include media-breakpoint-only(xs) {
+        top: 0;
+        left: -91%;
+    }
+}
+
+.circle__footer{
+    right: 65%;
+    top: -950px;
+    @include media-breakpoint-only(sm) {
+        right: -67%;
+        top: -375px;
+    }
+    @include media-breakpoint-only(xs) {
+        width: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -375px;
+    }
+}
+
+.circle__contact{
+    right: -600px;
+    top: -649px;
+    @include media-breakpoint-only(lg) {
+        right: -83%;
+    }
+    @include media-breakpoint-only(md) {
+        right: -83%;
+    }
+    @include media-breakpoint-only(sm) {
+        width: 1000px;
+        right: -250px;
+        top: -75px;
+    }
+    @include media-breakpoint-only(xs) {
+        width: 1000px;
+        right: auto;
+        left: -389px;
+        top: -133px;
+    }
+}
+.circle__daas1{
+    top: -450px;
+    right: -600px;
+    //display: none;
+    @include media-breakpoint-only(md) {
+        top: -450px;
+        right: -700px;
+    }
+    @include media-breakpoint-only(sm) {
+        top: -450px;
+        right: -700px;
+    }
+    @include media-breakpoint-only(xs) {
+        width: 1300px;
+        top: -300px;
+        right: auto;
+        left: -300px;
+    }
+}
+.circle__daas2{
+    top: -400px;
+    left: -800px;
+    //display: none;
+    @include media-breakpoint-only(md) {
+        top: -100px;
+        left: -1000px;
+    }
+    @include media-breakpoint-only(sm) {
+        top: auto;
+        bottom: -300px;
+        left: -500px;
+    }
+    @include media-breakpoint-only(xs) {
+        top: auto;
+        bottom: -300px;
+        left: -600px;
+    }
+}
+.circle__tradein1{
+    top: -800px;
+    right: -700px;
+    @include media-breakpoint-only(sm) {
+
+    }
+    @include media-breakpoint-only(xs) {
+        top: -300px;
+    }
+}
+.circle__tradein2{
+    top: -100px;
+    left: -600px;
+    @include media-breakpoint-only(sm) {
+        top: -300px;
+    }
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+}
+.circle__price{
+    width: 2000px;
+    left: -500px;
+    top: -700px;
+    @include media-breakpoint-down(md) {
+        width: 1500px;
+    }
+    @include media-breakpoint-only(md) {
+        left: -300px;
+        top: -400px;
+    }
+    @include media-breakpoint-only(sm) {
+        left: -350px;
+        top: -450px;
+    }
+    @include media-breakpoint-only(xs) {
+        top: -300px;
+    }
+}
