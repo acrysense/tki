@@ -11,7 +11,7 @@
 <body>
     <!-- Content -->
     <div>
-		<img src="../assets/img/index/circle-purple.png" alt="" class="circle_purple">
+		<img src="img/dist/index/circle-purple.png" alt="" class="circle_purple">
 		<div class="wrap">
 			<div class="bg-lines">
 				<div class="line line1"></div>
@@ -28,7 +28,7 @@
 
 				<div class="container header__container">
 					<a href="/" class="header__logo">
-						<img src="../assets/img/logo.png" alt="">
+						<img src="img/dist/logo.png" alt="">
 					</a>
 					<nav class="header__nav">
 						<a href="daas.html" class="header__nav-link">DAAS</a>
@@ -61,7 +61,17 @@
                                 <input type="text" class="devices__input devices__input--full" id="calculations-name" placeholder="Название расчета">
                                 <label for="calculations-name" class="devices__label">Название расчета</label>
                             </div>
-                            <a href="" class="devices__excel" download></a>
+                            <a href="" class="devices__excel" download>
+                                <svg width="34" height="46" viewBox="0 0 34 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.219 45H0.697266V1H21.7408L33.219 12.4783V45Z" fill="white" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.7401 1V12.4783H33.2184" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.4364 39.262H27.4799V16.3054H6.4364V39.262Z" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.4364 22.0446H27.4799" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.4364 27.7836H27.4799" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.4364 33.5228H27.4799" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.087 16.3054V39.262" stroke="#58BB72" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
                         <div class="devices__sidebar devices__sidebar--accent">
                             <p class="devices__sum">
@@ -82,7 +92,17 @@
                                         <div class="devices__name">Группа устройств 1</div>
                                         <div class="devices__info">Смартфоны: <span class="devices__info--value">2980</span> шт. по <span class="devices__info--price">25 680</span>₽</div>
                                     </div>
-                                    <a href="" class="devices__delete"></a>
+                                    <a href="" class="devices__delete">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9997 4.75041H0.996094L2.12136 2.49988H14.8744L15.9997 4.75041Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87048 17.5036H14.1232V4.75061H2.87048V17.5036Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3749 1H6.62396L5.87378 2.50036H11.125L10.3749 1Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.37195 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.62256 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.12122 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.8733 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
                                 </div>
                                 <div class="devices__sidebar devices__sidebar--current">
                                     <p class="devices__sum">
@@ -114,7 +134,7 @@
                                         </div>
                                     </div>
                                     <div class="devices__input-group">
-                                        <input type="text" class="devices__input" id="notes" placeholder="Ваши заметки и комментарии">
+                                        <input type="text" class="devices__input devices__input--no-border" id="notes" placeholder="Ваши заметки и комментарии">
                                         <label for="notes" class="devices__label">Ваши заметки и комментарии</label>
                                     </div>
                                     <div class="devices__block">
@@ -154,30 +174,34 @@
                                         <div class="devices__small-heading">Где будут обрабатываться заявки</div>
                                         <p class="devices__paragraph">Call - Centr по номеру 8 800 дуступен всем Сервисным программам (СП)</p>
                                         <div class="devices__checkbox-group">
-                                            <input type="radio" name="call" class="custom-checkbox__input" id="product1" required>
-                                            <label for="product1" class="custom-checkbox" data-product="1">
-                                                <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
-                                                <span class="custom-checkbox__inner">
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">Бесплатно</span>
-                                                        <span class="custom-checkbox__help">Для iSurance</span>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" class="custom-checkbox__input" id="product1" required>
+                                                <label for="product1" class="custom-checkbox__label" data-product="1">
+                                                    <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
+                                                    <span class="custom-checkbox__inner">
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">Бесплатно</span>
+                                                            <span class="custom-checkbox__help">Для iSurance</span>
+                                                        </span>
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">0,03%</span>
+                                                            <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                        </span>
                                                     </span>
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">0,03%</span>
-                                                        <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" class="custom-checkbox__input" id="product2" required>
+                                                <label for="product2" class="custom-checkbox__label" data-product="2">
+                                                    <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
+                                                    <span class="custom-checkbox__inner">
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">60₽ за устр./мес.</span>
+                                                            <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                            </label>
-                                            <input type="radio" name="call" class="custom-checkbox__input" id="product2" required>
-                                            <label for="product2" class="custom-checkbox" data-product="2">
-                                                <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
-                                                <span class="custom-checkbox__inner">
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">60₽ за устр./мес.</span>
-                                                        <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
-                                                    </span>
-                                                </span>
-                                            </label>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="devices__block">
@@ -386,7 +410,17 @@
                                         <div class="devices__name">Группа устройств 2</div>
                                         <div class="devices__info">Смартфоны: <span class="devices__info--value">2980</span> шт. по <span class="devices__info--price">25 680</span>₽</div>
                                     </div>
-                                    <a href="" class="devices__delete"></a>
+                                    <a href="" class="devices__delete">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9997 4.75041H0.996094L2.12136 2.49988H14.8744L15.9997 4.75041Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87048 17.5036H14.1232V4.75061H2.87048V17.5036Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3749 1H6.62396L5.87378 2.50036H11.125L10.3749 1Z" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.37195 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.62256 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.12122 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.8733 7.00122V15.2532" stroke="#8799AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
                                 </div>
                                 <div class="devices__sidebar devices__sidebar--current">
                                     <p class="devices__sum">
@@ -418,7 +452,7 @@
                                         </div>
                                     </div>
                                     <div class="devices__input-group">
-                                        <input type="text" class="devices__input" id="notes-copy" placeholder="Ваши заметки и комментарии">
+                                        <input type="text" class="devices__input devices__input--no-border" id="notes-copy" placeholder="Ваши заметки и комментарии">
                                         <label for="notes-copy" class="devices__label">Ваши заметки и комментарии</label>
                                     </div>
                                     <div class="devices__block">
@@ -458,30 +492,34 @@
                                         <div class="devices__small-heading">Где будут обрабатываться заявки</div>
                                         <p class="devices__paragraph">Call - Centr по номеру 8 800 дуступен всем Сервисным программам (СП)</p>
                                         <div class="devices__checkbox-group">
-                                            <input type="radio" name="call" class="custom-checkbox__input" id="product1-copy" required>
-                                            <label for="product1-copy" class="custom-checkbox" data-product="1">
-                                                <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
-                                                <span class="custom-checkbox__inner">
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">Бесплатно</span>
-                                                        <span class="custom-checkbox__help">Для iSurance</span>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" class="custom-checkbox__input" id="product1-copy" required>
+                                                <label for="product1-copy" class="custom-checkbox__label" data-product="1">
+                                                    <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
+                                                    <span class="custom-checkbox__inner">
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">Бесплатно</span>
+                                                            <span class="custom-checkbox__help">Для iSurance</span>
+                                                        </span>
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">0,03%</span>
+                                                            <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                        </span>
                                                     </span>
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">0,03%</span>
-                                                        <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" class="custom-checkbox__input" id="product2-copy" required>
+                                                <label for="product2-copy" class="custom-checkbox__label" data-product="2">
+                                                    <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
+                                                    <span class="custom-checkbox__inner">
+                                                        <span class="custom-checkbox__block">
+                                                            <span class="custom-checkbox__name">60₽ за устр./мес.</span>
+                                                            <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
+                                                        </span>
                                                     </span>
-                                                </span>
-                                            </label>
-                                            <input type="radio" name="call" class="custom-checkbox__input" id="product2-copy" required>
-                                            <label for="product2-copy" class="custom-checkbox" data-product="2">
-                                                <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
-                                                <span class="custom-checkbox__inner">
-                                                    <span class="custom-checkbox__block">
-                                                        <span class="custom-checkbox__name">60₽ за устр./мес.</span>
-                                                        <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
-                                                    </span>
-                                                </span>
-                                            </label>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="devices__block">
@@ -691,11 +729,11 @@
             </div>
 
 			<div class="bottom-logo">
-				<img src="../assets/img/logo-blue.png" alt="" class="bottom-logo__img">
+				<img src="img/dist/logo-blue.png" alt="" class="bottom-logo__img">
 			</div>
 			<footer class="footer">
 
-				<img src="../assets/img/index/circle-blue.png" alt="" class="circle__footer">
+				<img src="img/dist/index/circle-blue.png" alt="" class="circle__footer">
 
 				<div class="container footer__container">
 					<div class="footer__copyright">© 2018 Телекоминвест</div>

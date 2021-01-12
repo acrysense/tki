@@ -74,6 +74,7 @@
         border-radius: 4px
         &:hover
             color: #ffffff
+            background: #1750D4
 
 .calculations
     padding: 40px 72px
@@ -118,14 +119,18 @@
         text-align: right
     &__edit
         color: #848992
+        &:hover
+            color: #0047BA
     &__delete
         padding: 20px
-        background: #FCFCFE
-        background-image: url(../img/dist/sprite.svg#delete-icon)
-        background-repeat: no-repeat
-        background-size: 16px
-        background-position: center
+        background-color: #FCFCFE
         border-radius: 4px
+        & > svg path
+            transition: stroke 0.5s
+        &:hover
+            background-color: #FFF0F0
+            & > svg path
+                stroke: #CC7277
 
 .devices
     max-width: 1245px
@@ -165,6 +170,8 @@
         border: 1px solid #99ABC1
         border-radius: 2px
         transition: background 0.5s
+        &--no-border
+            border: 1px solid transparent
         &--help
             padding: 26px 36px 8px 12px
         &::-webkit-input-placeholder
@@ -178,6 +185,7 @@
         &:focus,
         &:not(:placeholder-shown)
             background: #fff
+            border: 1px solid #99ABC1
     &__input--full
         min-width: 650px
     &__label
@@ -189,17 +197,14 @@
         color: #617181
         cursor: pointer
         transition: all 0.5s
-        & + .devices__paragraph
-            margin-top: 9px
     &__excel
         display: block
         margin-left: 20px
-        width: 32.5px
-        height: 44px
-        background-image: url(../img/dist/sprite.svg#excel-icon)
-        background-repeat: no-repeat
-        background-size: 100%
-        background-position: center
+        & > svg path
+            transition: stroke 0.5s
+        &:hover
+            & > svg path
+                stroke: #299345
     &__sidebar
         padding: 23px 72px 23px 47px
         max-width: 394px
@@ -235,7 +240,7 @@
         letter-spacing: 0.14px
         &--text
             color: #AFA0D1
-            font-weight: 500
+            font-weight: normal
             letter-spacing: 0.14px
     &__item
         &--active
@@ -287,11 +292,14 @@
         display: block
         padding: 20px
         margin-left: auto
-        background-image: url(../img/dist/sprite.svg#delete-icon)
-        background-repeat: no-repeat
-        background-size: 16px
-        background-position: center
+        background-color: #FCFCFE
         border-radius: 4px
+        & > svg path
+            transition: stroke 0.5s
+        &:hover
+            background-color: #FFF0F0
+            & > svg path
+                stroke: #CC7277
     &__content
         display: flex
         max-height: 0
@@ -347,14 +355,17 @@
         background-size: 11px
         background-position: top 50% right 16px
         appearance: none
-        border: 1px solid #99ABC1
+        border: 1px solid transparent
         border-radius: 2px
         &--active
             background-color: #fff
+            border: 1px solid #99ABC1
     &__select + &__input-group
         margin-left: 16px
     &__checkbox-group
         display: flex
+        align-items: center
+        justify-content: space-between
         margin-top: 17px
     &__checkout
         margin-top: 26px
@@ -375,6 +386,8 @@
         font-size: 16px
         font-weight: 500
         color: #617181
+        & + .devices__paragraph
+            margin-top: 9px
     &__bottom
         padding: 23px 72px
         margin-top: 5px
@@ -394,7 +407,10 @@
     margin-top: 15px
     &__item
         padding: 6px 20px 11px 17px
-        background: #ECF1F7
+        background: rgba(#ECF1F7, 0.7)
+        transition: background 0.5s
+        &:hover
+            background: #ECF1F7
         &--active
             .package__content
                 max-height: 300px
@@ -519,20 +535,24 @@
         font-weight: 500
 
 .custom-checkbox
-    display: block
-    position: relative
-    padding: 14px 13px 15px
-    width: 100%
-    background: rgba(#ECF1F7, 0.7)
-    border: 1px solid transparent
-    transition: all 0.5s
-    cursor: pointer
-    & + .custom-checkbox__input + .custom-checkbox
-        margin-left: 16px
     &__input
         display: none
-        &:checked + .custom-checkbox
-            border: 1px solid #0047BA
+        &:checked + .custom-checkbox__label
+            color: #ffffff
+            background: #3065E0
+            & .custom-checkbox__help
+                color: #BACFFF
+    &__label
+        display: block
+        position: relative
+        padding: 14px 13px 15px
+        min-width: 345px
+        width: 100%
+        background: rgba(#ECF1F7, 0.7)
+        transition: all 0.5s
+        cursor: pointer
+        &:hover
+            background: #ECF1F7
     &__title
         display: block
         font-size: 12px
@@ -560,3 +580,4 @@
         line-height: 20px
         letter-spacing: 0.14px
         color: #6D7787
+        transition: all 0.5s
