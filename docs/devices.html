@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телекоминвест</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Content -->
+    <div>
+		<img src="../assets/img/index/circle-purple.png" alt="" class="circle_purple">
+		<div class="wrap">
+			<div class="bg-lines">
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+				<div class="line line3"></div>
+				<div class="line line4"></div>
+				<div class="line line5"></div>
+				<div class="line line6"></div>
+			</div>
+
+			<header class="header">
+
+				<!--<img src="assets/img/index/circle-purple.png" alt="" class="circle_purple">-->
+
+				<div class="container header__container">
+					<a href="/" class="header__logo">
+						<img src="../assets/img/logo.png" alt="">
+					</a>
+					<nav class="header__nav">
+						<a href="daas.html" class="header__nav-link">DAAS</a>
+						<a href="trade-in.html" class="header__nav-link">Trade IN</a>
+						<a href="http://isurance.ru/" class="header__nav-link" target="_blank">ServicePack</a>
+						<a href="#" class="header__nav-link">Вакансии</a>
+						<a href="https://crm.isurance.ru" class="header__nav-link"
+						   target="_blank">Войти&nbsp;в&nbsp;лк</a>
+						<a href="contact.html" class="header__nav-link">Контакты</a>
+					</nav>
+					<div class="header__phone-holder">
+						<a href="tel:+74951503494" class="header__phone">+7 (495) 150-34-94</a>
+					</div>
+				</div>
+			</header>
+
+			<div class="home">
+				<div class="home__wrapper">
+                    <a href="index.html" class="home__back"></a>
+                    <div class="home__title">Калькулятор B2B услуг</div>
+                    <div class="home__group">
+                        <a href="" class="home__link">Дублировать этот</a>
+                        <a href="devices.html" class="home__btn">Создать новый расчет</a>
+                    </div>
+                </div>
+                <div class="devices">
+                    <div class="devices__top">
+                        <div class="devices__group">
+                            <div class="devices__input-group">
+                                <input type="text" class="devices__input devices__input--full" id="calculations-name" placeholder="Название расчета">
+                                <label for="calculations-name" class="devices__label">Название расчета</label>
+                            </div>
+                            <a href="" class="devices__excel" download></a>
+                        </div>
+                        <div class="devices__sidebar devices__sidebar--accent">
+                            <p class="devices__sum">
+                                <span class="devices__sum--price">3 840 340₽</span>
+                                <span class="devices__sum--text">за весь период</span>
+                            </p>
+                            <p class="devices__sub">
+                                <span class="devices__sub--price">160 014,17₽</span>
+                                <span class="devices__sub--text">в рассрочку на 24 мес.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="devices__wrapper">
+                        <div class="devices__item">
+                            <div class="devices__trigger">
+                                <div class="devices__group">
+                                    <div class="devices__more">
+                                        <div class="devices__name">Группа устройств 1</div>
+                                        <div class="devices__info">Смартфоны: <span class="devices__info--value">2980</span> шт. по <span class="devices__info--price">25 680</span>₽</div>
+                                    </div>
+                                    <a href="" class="devices__delete"></a>
+                                </div>
+                                <div class="devices__sidebar devices__sidebar--current">
+                                    <p class="devices__sum">
+                                        <span class="devices__sum--price">2 427 290₽</span>
+                                        <span class="devices__sum--discount">(15%)</span>
+                                    </p>
+                                    <p class="devices__sub">
+                                        <span class="devices__sub--price">Карта iSurance Gold</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="devices__content">
+                                <div class="devices__body">
+                                    <div class="devices__inner">
+                                        <select id="device-type" class="devices__select">
+                                            <option value="1">Выберете тип устройства</option>
+                                            <option value="2">Выберете тип устройства</option>
+                                            <option value="3">Выберете тип устройства</option>
+                                        </select>
+                                        <div class="devices__input-group">
+                                            <input type="text" class="devices__input devices__input--help" id="device-price-1">
+                                            <label for="device-price-1" class="devices__label">Стоимость 1го устройства</label>
+                                            <span class="devices__help">₽</span>
+                                        </div>
+                                        <div class="devices__input-group devices__input-group--limit">
+                                            <input type="text" class="devices__input devices__input--help" id="quantity">
+                                            <label for="quantity" class="devices__label">Кол-во</label>
+                                            <span class="devices__help">шт.</span>
+                                        </div>
+                                    </div>
+                                    <div class="devices__input-group">
+                                        <input type="text" class="devices__input" id="notes" placeholder="Ваши заметки и комментарии">
+                                        <label for="notes" class="devices__label">Ваши заметки и комментарии</label>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Сервисная программа</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                                (<span class="devices__summary--discount">0%</span>)
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания от производителя</p>
+                                        <select id="guaranteed-service" class="devices__select">
+                                            <option value="1">Срок гарантийного обслуживания</option>
+                                            <option value="2">Срок гарантийного обслуживания</option>
+                                            <option value="3">Срок гарантийного обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично</p>
+                                        <select id="not-guaranteed-service" class="devices__select">
+                                            <option value="1">Срок не гарантийного обслуживания</option>
+                                            <option value="2">Срок не гарантийного обслуживания</option>
+                                            <option value="3">Срок не гарантийного обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично</p>
+                                        <select id="incidents" class="devices__select">
+                                            <option value="1">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                            <option value="2">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                            <option value="3">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично.
+                                            Устройство в рамках программы или заменяется и больше не ремонтируется, или ремонтируется, но в случае последней замены стоимость предыдущего ремонта возвращается обратно.</p>
+                                        <select id="logistics" class="devices__select">
+                                            <option value="1">Логистика</option>
+                                            <option value="2">Логистика</option>
+                                            <option value="3">Логистика</option>
+                                        </select>
+                                        <p class="devices__paragraph">Забор устройства и обратная доставка столько раз сколько гарантийных и не гарантийных ремонтов и замен предусмотрено выбранными опциями</p>
+                                        <div class="devices__small-heading">Где будут обрабатываться заявки</div>
+                                        <p class="devices__paragraph">Call - Centr по номеру 8 800 дуступен всем Сервисным программам (СП)</p>
+                                        <div class="devices__checkbox-group">
+                                            <input type="radio" name="call" class="custom-checkbox__input" id="product1" required>
+                                            <label for="product1" class="custom-checkbox" data-product="1">
+                                                <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
+                                                <span class="custom-checkbox__inner">
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">Бесплатно</span>
+                                                        <span class="custom-checkbox__help">Для iSurance</span>
+                                                    </span>
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">0,03%</span>
+                                                        <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <input type="radio" name="call" class="custom-checkbox__input" id="product2" required>
+                                            <label for="product2" class="custom-checkbox" data-product="2">
+                                                <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
+                                                <span class="custom-checkbox__inner">
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">60₽ за устр./мес.</span>
+                                                        <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Конвейер</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="conveyor1" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor1">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Базовый конвейер. Новые устройства</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                            <label for="conveyor2" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor2">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Первичная загрузка приложений на устройство по списку от заказчика</span>
+                                                </span>
+                                                <span class="small-checkbox__price">216₽</span>
+                                            </label>
+                                            <label for="conveyor3" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor3">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Устройства со склада Заказчика, возможно Б/У</span>
+                                                </span>
+                                                <span class="small-checkbox__price">144₽</span>
+                                            </label>
+                                            <label for="conveyor4" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor4">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Предоставление подменного фонда на время ремонта</span>
+                                                </span>
+                                                <span class="small-checkbox__price">218₽</span>
+                                            </label>
+                                        </div>
+                                        <div class="devices__wrap">
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="conveyor-input1">
+                                                <label for="conveyor-input1" class="devices__label">Составление инструкций, 3 000₽/час.</label>
+                                                <span class="devices__help">0₽</span>
+                                                <p class="devices__paragraph">Составление инструкции по настроке устройств по эталонному образцу</p>
+                                            </div>
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="conveyor-input2">
+                                                <label for="conveyor-input2" class="devices__label">Проведение обучения, 4 000₽/час.</label>
+                                                <span class="devices__help">0₽</span>
+                                                <p class="devices__paragraph">Проведение обучения и подготовка обучающих материалов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Мониторинг использования устройств</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="licenses-checkbox" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="licenses" id="licenses-checkbox">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Лицензии Knox Manage</span>
+                                                </span>
+                                                <span class="small-checkbox__price">3 240₽</span>
+                                            </label>
+                                        </div>
+                                        <div class="devices__wrap devices__wrap--disabled" id="licenses-wrapper">
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="licenses-input1" disabled>
+                                                <label for="licenses-input1" class="devices__label">Тех. обслуживание MDM, 2 000₽/час.</label>
+                                                <span class="devices__help">60 000₽/мес.</span>
+                                                <p class="devices__paragraph">Решение не стандартных задач, доработка модулей решение проблем с тех поддержкой KNOX</p>
+                                            </div>
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="licenses-input2" disabled>
+                                                <label for="licenses-input2" class="devices__label">Обслуживание запросов-заявок, 800₽/час.</label>
+                                                <span class="devices__help">48 000₽/мес.</span>
+                                                <p class="devices__paragraph">Выполнение задач по запросу заказчика, сброс устр. поиск места нахождения и тд.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Завершение жизненного цикла устройств</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="device-life1" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="device-life" id="device-life1">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Утилизация</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                            <label for="device-life2" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="device-life" id="device-life2">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Обратный выкуп, Trade-in 1 год</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="devices__sidebar devices__sidebar--select">
+                                    <div class="devices__heading">Доступные пакеты</div>
+                                    <div class="package">
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package1" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package1">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">290 000₽</span>
+                                                        <span class="circle-checkbox__discount">(15%)</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Карта iSurance Gold</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                            </div>
+                                        </div>
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package2" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package2">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">310 000₽</span>
+                                                        <span class="circle-checkbox__discount">(13%)</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Гибкая страховая программа</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                            </div>
+                                        </div>
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package3" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package3">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">410 000₽</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Карта Care+</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                                <div class="package__details">
+                                                    <div class="devices__input-group">
+                                                        <input type="text" class="devices__input devices__input--help" id="care">
+                                                        <label for="care" class="devices__label">Ваша цена за шт.</label>
+                                                        <span class="devices__help">₽</span>
+                                                    </div>
+                                                    <div class="package__inner">
+                                                        <p class="package__group">
+                                                            <span>Себест-сть:</span>
+                                                            <span class="package__value">16 192₽</span>
+                                                        </p>
+                                                        <p class="package__group">
+                                                            <span>РРЦ:</span>
+                                                            <span class="package__value">19 000₽</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="devices__paragraph devices__paragraph--small">Итоговые цены указаны в руб., за все время и рассчитываются исходя из указанного типа, кол-ва, стоимости устр. за весь выбранный период обслуживания</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devices__item">
+                            <div class="devices__trigger">
+                                <div class="devices__group">
+                                    <div class="devices__more">
+                                        <div class="devices__name">Группа устройств 2</div>
+                                        <div class="devices__info">Смартфоны: <span class="devices__info--value">2980</span> шт. по <span class="devices__info--price">25 680</span>₽</div>
+                                    </div>
+                                    <a href="" class="devices__delete"></a>
+                                </div>
+                                <div class="devices__sidebar devices__sidebar--current">
+                                    <p class="devices__sum">
+                                        <span class="devices__sum--price">2 427 290₽</span>
+                                        <span class="devices__sum--discount">(15%)</span>
+                                    </p>
+                                    <p class="devices__sub">
+                                        <span class="devices__sub--price">Карта iSurance Gold</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="devices__content">
+                                <div class="devices__body">
+                                    <div class="devices__inner">
+                                        <select id="device-type-copy" class="devices__select">
+                                            <option value="1">Выберете тип устройства</option>
+                                            <option value="2">Выберете тип устройства</option>
+                                            <option value="3">Выберете тип устройства</option>
+                                        </select>
+                                        <div class="devices__input-group">
+                                            <input type="text" class="devices__input devices__input--help" id="device-price-1-copy">
+                                            <label for="device-price-1-copy" class="devices__label">Стоимость 1го устройства</label>
+                                            <span class="devices__help">₽</span>
+                                        </div>
+                                        <div class="devices__input-group devices__input-group--limit">
+                                            <input type="text" class="devices__input devices__input--help" id="quantity-copy">
+                                            <label for="quantity-copy" class="devices__label">Кол-во</label>
+                                            <span class="devices__help">шт.</span>
+                                        </div>
+                                    </div>
+                                    <div class="devices__input-group">
+                                        <input type="text" class="devices__input" id="notes-copy" placeholder="Ваши заметки и комментарии">
+                                        <label for="notes-copy" class="devices__label">Ваши заметки и комментарии</label>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Сервисная программа</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                                (<span class="devices__summary--discount">0%</span>)
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания от производителя</p>
+                                        <select id="guaranteed-service-copy" class="devices__select">
+                                            <option value="1">Срок гарантийного обслуживания</option>
+                                            <option value="2">Срок гарантийного обслуживания</option>
+                                            <option value="3">Срок гарантийного обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично</p>
+                                        <select id="not-guaranteed-service-copy" class="devices__select">
+                                            <option value="1">Срок не гарантийного обслуживания</option>
+                                            <option value="2">Срок не гарантийного обслуживания</option>
+                                            <option value="3">Срок не гарантийного обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично</p>
+                                        <select id="incidents-copy" class="devices__select">
+                                            <option value="1">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                            <option value="2">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                            <option value="3">Кол-во не гарантийных инцидентов в течение срока обслуживания</option>
+                                        </select>
+                                        <p class="devices__paragraph">Количество гарантийных инцидентов в течение срока гарантийного обслуживания не огранично.
+                                            Устройство в рамках программы или заменяется и больше не ремонтируется, или ремонтируется, но в случае последней замены стоимость предыдущего ремонта возвращается обратно.</p>
+                                        <select id="logistics-copy" class="devices__select">
+                                            <option value="1">Логистика</option>
+                                            <option value="2">Логистика</option>
+                                            <option value="3">Логистика</option>
+                                        </select>
+                                        <p class="devices__paragraph">Забор устройства и обратная доставка столько раз сколько гарантийных и не гарантийных ремонтов и замен предусмотрено выбранными опциями</p>
+                                        <div class="devices__small-heading">Где будут обрабатываться заявки</div>
+                                        <p class="devices__paragraph">Call - Centr по номеру 8 800 дуступен всем Сервисным программам (СП)</p>
+                                        <div class="devices__checkbox-group">
+                                            <input type="radio" name="call" class="custom-checkbox__input" id="product1-copy" required>
+                                            <label for="product1-copy" class="custom-checkbox" data-product="1">
+                                                <span class="custom-checkbox__title">Персональный Личный кабинет Покупателя</span>
+                                                <span class="custom-checkbox__inner">
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">Бесплатно</span>
+                                                        <span class="custom-checkbox__help">Для iSurance</span>
+                                                    </span>
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">0,03%</span>
+                                                        <span class="custom-checkbox__help">Для гибкой СП</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <input type="radio" name="call" class="custom-checkbox__input" id="product2-copy" required>
+                                            <label for="product2-copy" class="custom-checkbox" data-product="2">
+                                                <span class="custom-checkbox__title">Работа в системе трекинга заявок Заказчика</span>
+                                                <span class="custom-checkbox__inner">
+                                                    <span class="custom-checkbox__block">
+                                                        <span class="custom-checkbox__name">60₽ за устр./мес.</span>
+                                                        <span class="custom-checkbox__help">Доступно только в гибкой СП</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Конвейер</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="conveyor1-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor1-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Базовый конвейер. Новые устройства</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                            <label for="conveyor2-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor2-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Первичная загрузка приложений на устройство по списку от заказчика</span>
+                                                </span>
+                                                <span class="small-checkbox__price">216₽</span>
+                                            </label>
+                                            <label for="conveyor3-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor3-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Устройства со склада Заказчика, возможно Б/У</span>
+                                                </span>
+                                                <span class="small-checkbox__price">144₽</span>
+                                            </label>
+                                            <label for="conveyor4-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="conveyor" id="conveyor4-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Предоставление подменного фонда на время ремонта</span>
+                                                </span>
+                                                <span class="small-checkbox__price">218₽</span>
+                                            </label>
+                                        </div>
+                                        <div class="devices__wrap">
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="conveyor-input1-copy">
+                                                <label for="conveyor-input1-copy" class="devices__label">Составление инструкций, 3 000₽/час.</label>
+                                                <span class="devices__help">0₽</span>
+                                                <p class="devices__paragraph">Составление инструкции по настроке устройств по эталонному образцу</p>
+                                            </div>
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="conveyor-input2-copy">
+                                                <label for="conveyor-input2-copy" class="devices__label">Проведение обучения, 4 000₽/час.</label>
+                                                <span class="devices__help">0₽</span>
+                                                <p class="devices__paragraph">Проведение обучения и подготовка обучающих материалов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Мониторинг использования устройств</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="licenses-checkbox-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="licenses" id="licenses-checkbox-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Лицензии Knox Manage</span>
+                                                </span>
+                                                <span class="small-checkbox__price">3 240₽</span>
+                                            </label>
+                                        </div>
+                                        <div class="devices__wrap devices__wrap--disabled" id="licenses-wrapper">
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="licenses-input1-copy" disabled>
+                                                <label for="licenses-input1-copy" class="devices__label">Тех. обслуживание MDM, 2 000₽/час.</label>
+                                                <span class="devices__help">60 000₽/мес.</span>
+                                                <p class="devices__paragraph">Решение не стандартных задач, доработка модулей решение проблем с тех поддержкой KNOX</p>
+                                            </div>
+                                            <div class="devices__input-group">
+                                                <input type="text" class="devices__input devices__input--help" id="licenses-input2-copy" disabled>
+                                                <label for="licenses-input2-copy" class="devices__label">Обслуживание запросов-заявок, 800₽/час.</label>
+                                                <span class="devices__help">48 000₽/мес.</span>
+                                                <p class="devices__paragraph">Выполнение задач по запросу заказчика, сброс устр. поиск места нахождения и тд.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="devices__block">
+                                        <div class="devices__inner">
+                                            <div class="devices__heading">Завершение жизненного цикла устройств</div>
+                                            <p class="devices__summary">
+                                                <span class="devices__summary--price">0₽</span>
+                                            </p>
+                                        </div>
+                                        <p class="devices__paragraph">В базовой комплектации входит год гарантийного обслуживания + коллцентр</p>
+                                        <div class="devices__checkout">
+                                            <label for="device-life1-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="device-life" id="device-life1-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Утилизация</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                            <label for="device-life2-copy" class="small-checkbox">
+                                                <span class="small-checkbox__group">
+                                                    <input type="checkbox" class="small-checkbox__input" name="device-life" id="device-life2-copy">
+                                                    <span class="small-checkbox__icon"></span>
+                                                    <span class="small-checkbox__name">Обратный выкуп, Trade-in 1 год</span>
+                                                </span>
+                                                <span class="small-checkbox__price">480₽</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="devices__sidebar devices__sidebar--select">
+                                    <div class="devices__heading">Доступные пакеты</div>
+                                    <div class="package">
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package1-copy" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package1-copy">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">290 000₽</span>
+                                                        <span class="circle-checkbox__discount">(15%)</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Карта iSurance Gold</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                            </div>
+                                        </div>
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package2-copy" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package2-copy">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">310 000₽</span>
+                                                        <span class="circle-checkbox__discount">(13%)</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Гибкая страховая программа</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                            </div>
+                                        </div>
+                                        <div class="package__item">
+                                            <div class="package__trigger">
+                                                <label for="package3-copy" class="circle-checkbox">
+                                                    <span class="circle-checkbox__group">
+                                                        <input type="radio" class="circle-checkbox__input" name="package" id="package3-copy">
+                                                        <span class="circle-checkbox__icon"></span>
+                                                        <span class="circle-checkbox__price">410 000₽</span>
+                                                    </span>
+                                                </label>
+                                                <span class="package__dropdown"></span>
+                                                <p class="devices__sub">
+                                                    <span class="devices__sub--price">Карта Care+</span>
+                                                </p>
+                                            </div>
+                                            <div class="package__content">
+                                                <p class="package__description">Для Apple MacPro (Включая все СТО модели) начиная с моделей Late 2019</p>
+                                                <div class="package__details">
+                                                    <div class="devices__input-group">
+                                                        <input type="text" class="devices__input devices__input--help" id="care-copy">
+                                                        <label for="care-copy" class="devices__label">Ваша цена за шт.</label>
+                                                        <span class="devices__help">₽</span>
+                                                    </div>
+                                                    <div class="package__inner">
+                                                        <p class="package__group">
+                                                            <span>Себест-сть:</span>
+                                                            <span class="package__value">16 192₽</span>
+                                                        </p>
+                                                        <p class="package__group">
+                                                            <span>РРЦ:</span>
+                                                            <span class="package__value">19 000₽</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="devices__paragraph devices__paragraph--small">Итоговые цены указаны в руб., за все время и рассчитываются исходя из указанного типа, кол-ва, стоимости устр. за весь выбранный период обслуживания</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="devices__bottom">
+                        <a href="" class="devices__btn">Добавить новую группу устройств</a>
+                    </div>
+                </div>
+            </div>
+
+			<div class="bottom-logo">
+				<img src="../assets/img/logo-blue.png" alt="" class="bottom-logo__img">
+			</div>
+			<footer class="footer">
+
+				<img src="../assets/img/index/circle-blue.png" alt="" class="circle__footer">
+
+				<div class="container footer__container">
+					<div class="footer__copyright">© 2018 Телекоминвест</div>
+					<nav class="footer__nav">
+						<a href="daas.html" class="footer__nav-link">DAAS</a>
+						<a href="trade-in.html" class="footer__nav-link">Trade IN</a>
+						<a href="http://isurance.ru/" class="footer__nav-link" target="_blank">ServicePack</a>
+						<a href="#" class="footer__nav-link">Вакансии</a>
+						<a href="https://crm.isurance.ru" class="footer__nav-link" target="_blank">Войти&nbsp;в&nbsp;лк</a>
+						<a href="contact.html" class="footer__nav-link">Контакты</a>
+					</nav>
+					<div class="footer__phone">+7 (495) 150-34-94</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+    <!-- End of content -->
+    <!-- Scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
